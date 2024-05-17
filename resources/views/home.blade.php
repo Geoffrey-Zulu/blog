@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="css/style.css">
-    {{-- fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&display=swap"
         rel="stylesheet">
 </head>
-
 <body>
 
     <div class="navbar">
@@ -47,11 +44,45 @@
                 <img src="{{ asset('images/whatsapp.png') }}" alt="WhatsApp">
             </a>
             <a href="#" class="icon-link">
-                <img src="{{ asset('images/playstation.png') }}" alt="WhatsApp">
+                <img src="{{ asset('images/playstation.png') }}" alt="PlayStation">
             </a>
         </div>
     </div>
 
-</body>
+    <div class="content">
+        <h1>Latest Posts</h1>
+        <div class="blog-grid">
+            <div class="blog-post">
+                <div class="blog-image">
+                    <img src="{{ asset('images/cosmos.jpg') }}" alt="image">
+                </div>
+                <h2>Blog Title 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <div class="blog-image">
+                    <img src="{{ asset('images/cosmos.jpg') }}" alt="image">
+                </div>
+                <h2>Blog Title 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <div class="blog-image">
+                    <img src="{{ asset('images/cosmos.jpg') }}" alt="image">
+                </div>
+                <h2>Blog Title 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read More</a>
+            </div>
+            <!-- Add more blog posts as needed -->
+        </div>
+        <div class="older-posts">
+            <a href="#">Older Entries</a>
+        </div>
+    </div>
 
+    <script src="script.js"></script>
+</body>
 </html>
